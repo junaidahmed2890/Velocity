@@ -1,0 +1,46 @@
+.sidebar {
+  background-color: #f4f4f4;
+  height: 100vh;
+  transition: width 0.3s ease;
+}
+
+.sidebar.collapsed {
+  width: 0;
+}
+
+.main-content-wrapper {
+  padding-left: 20px; /* Adjust this according to your sidebar width */
+}
+.hide {
+visibility: hidden;
+}
+.active {
+ visibility: visible;
+}
+.nav-item-style{
+    width: "100%";
+}
+.table-header {
+  background-color: #144991;
+  color: white;
+}
+.table-header th {
+  border-right: 1px solid white; /* Adjust color and width as needed */
+  padding-left: 4px;
+}
+
+
+/* To prevent a border on the last element */
+.table-header th:last-child {
+  border-right: none;
+}
+
+.table-rows td{
+  border-bottom: 1px solid #ededed;
+}
+tr:nth-child(odd) td {
+  background-color: #ededed;
+}
+.dropdown-toggle::after {
+  display: none !important;
+}
