@@ -17,25 +17,26 @@ const Sidebar: React.FC = () => {
           style={{ backgroundColor: "#144991", color: "white" }}
         >
           <div className="">
-            <div className="mt-5 p-2 border-bottom">
-              <Link to="/homepage" className="nav-link nav-text text-white  ">
-                Home Page
+            <div className="mt-5 p-1 border-bottom ">
+              <Link to="/homepage" className="nav-link nav-text text-white">
+                <small>Home Page</small>
               </Link>
             </div>
-            <div className="p-2 border-bottom">
+            <div className="p-1 border-bottom">
               <Link
                 to="/timesheetupload"
                 className="nav-link nav-text text-white"
               >
-                Manage Client Timecard
+                
+                <small>Manage Client Timecard</small>
               </Link>
             </div>
-            <div className="p-2 border-bottom">
+            <div className="p-1 border-bottom">
               <Link
                 to="/timesheetreport"
                 className="nav-link nav-text text-white"
               >
-                Timesheet Approve Report
+                <small>Timesheet Approve Report</small>
               </Link>
             </div>
           </div>

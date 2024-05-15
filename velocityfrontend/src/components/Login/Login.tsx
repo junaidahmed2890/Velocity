@@ -39,7 +39,7 @@ export const LoginForm: React.FC<any> = ({ onLogin }) => {
     <div
       className="rounded-left"
       style={{
-        padding: "20%",
+        padding: "10%",
         backgroundColor: "white",
         height: "100vh",
         borderTopLeftRadius: "3%",
@@ -56,9 +56,9 @@ export const LoginForm: React.FC<any> = ({ onLogin }) => {
         to keep the data updated.
       </div>
       <div className="row justify-content-center">
-        <h1 className="col-10  pt-3 pb-4" style={{ color: "#144991" }}>
+        <h3 className="col-10  pt-2 pb-2" style={{ color: "#144991" }}>
           Welcome Back
-        </h1>
+        </h3>
       </div>
       <Formik
         initialValues={initialValues}
@@ -67,7 +67,7 @@ export const LoginForm: React.FC<any> = ({ onLogin }) => {
       >
         {({ errors, touched }) => (
           <Form>
-            <div className="mb-3">
+            <div className="mb-2">
               <label htmlFor="userId" className="form-label">
                 User Id<span className="text-danger"> *</span>
               </label>
@@ -79,7 +79,7 @@ export const LoginForm: React.FC<any> = ({ onLogin }) => {
               />
             </div>
 
-            <div className="mb-3">
+            <div className="mb-2">
               <label htmlFor="password" className="form-label">
                 Password <span className="text-danger">*</span>
               </label>
@@ -93,7 +93,7 @@ export const LoginForm: React.FC<any> = ({ onLogin }) => {
             <div className="row justify-content-center ">
               <button
                 type="submit"
-                className="btn col-8 mt-3"
+                className="btn col-8 mt-1"
                 style={{ backgroundColor: "#144991", color: "white" }}
               >
                 Submit

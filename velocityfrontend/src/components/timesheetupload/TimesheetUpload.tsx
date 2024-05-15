@@ -88,10 +88,10 @@ export const TimesheetUpload: React.FC = () => {
             {" "}
             <Form>
               <div className="row flex align-items-center">
-                <div className="col-sm-2 text-end ">
-                  <label htmlFor="uploadedBy">Uploaded By :</label>
+                <div className="col-sm-2">
+                 Uploaded By:
                 </div>
-                <div className="col-sm-3 ">
+                <div className="col-sm-2 ">
                   <Field name="uploadedBy" as="select" className="form-control">
                     <option value="">Select uploader</option>
                     {/* Populate with actual uploader names */}
@@ -110,7 +110,7 @@ export const TimesheetUpload: React.FC = () => {
                     />
                   </div>
                 </div>
-                <div className="col-sm-2 text-end">
+                <div className="col-sm-3">
                   <label htmlFor="file">Add Authorized Time Sheet :</label>
                 </div>
                 <div className="col-sm-3">
@@ -188,11 +188,12 @@ export const TimesheetUpload: React.FC = () => {
         </div>
       )}
       {file && (
-        <div className="mt-3">
+        <div className="mt-3" style={{height:"300px",width:"100%"}}>
           <h4>File Preview:</h4>
           <FileViewer
             fileType={file.name.split(".").pop()}
             filePath={URL.createObjectURL(file)}
+            
           />
         </div>
       )}
