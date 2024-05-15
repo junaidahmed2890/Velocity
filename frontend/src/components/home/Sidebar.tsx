@@ -11,50 +11,34 @@ const Sidebar: React.FC = () => {
 
   return (
     <div>
-      <div
-        onClick={showSidebar}
-        className="btn"
-        style={{
-          backgroundColor: "#144991",
-          color: "white",
-          cursor: "pointer",
-          marginLeft: "1%",
-          marginBottom: "2px",
-        }}
-      >
-        <FaIcons.FaBars />
-      </div>
       <div>
         <Nav
           className={`sidebar ${sidebar ? "active" : "hide"}`}
           style={{ backgroundColor: "#144991", color: "white" }}
         >
-          <ul className="nav flex-column">
-            <li
-              className="nav-item p-2 border-bottom"
-              style={{ width: "100%" }}
-            >
+          <div className="">
+            <div className="mt-5 p-2 border-bottom">
               <Link to="/homepage" className="nav-link nav-text text-white  ">
                 Home Page
               </Link>
-            </li>
-            <li className="nav-item p-2 border-bottom ">
+            </div>
+            <div className="p-2 border-bottom">
               <Link
                 to="/timesheetupload"
                 className="nav-link nav-text text-white"
               >
                 Manage Client Timecard
               </Link>
-            </li>
-            <li className="nav-item p-2 border-bottom ">
+            </div>
+            <div className="p-2 border-bottom">
               <Link
                 to="/timesheetreport"
                 className="nav-link nav-text text-white"
               >
                 Timesheet Approve Report
               </Link>
-            </li>
-          </ul>
+            </div>
+          </div>
         </Nav>
       </div>
     </div>
